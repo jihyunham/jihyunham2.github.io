@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>MyRecipe</title>
+    <style>
+    body {
+        position: relative;
+    }
+    .affix {
+        top:0;
+        width: 100%;
+        z-index: 9999 !important;
+    }
+    .navbar {
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        background-color: #fada5e;
+        font-size: 14px;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #f9a602 !important;
+        background-color: #fff !important;
+    }
+    .navbar .navbar-nav > .open > a,
+    .navbar .navbar-nav > .open > a:hover,
+    .navbar .navbar-nav > .open > a:focus {
+        background-color: #fff !important;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .flex-container > div {
+        background-color: #f1f1f1;
+        padding: 3px;
+        margin: 10px;
+        text-align: center;
+    }
+    .navbar-toggle {
+        background-color: #fada5e !important;
+    }
+    .content {
+    	text-align: center;
+    }
+    .col-sm-4 {
+    	padding: 5px;
+    }
+	.multicolumns {
+		column-count : 3;
+		background-color: RGB(255,239,222);
+	}
+	.multicolumns_hamham {
+		column-count : 1;
+		background-color : RGB(255,239,222) ;
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+    <a href="index.html"><h1>MyRecipe</h1></a>
+    </div>
+    <!-- 개인 메뉴 영역 -->
+    <div class="flex-container">
+        <div>My Page</div>
+        <div>Sign Up</div>
+        <div>Sign In</div>
+    </div>
+    <!-- 전체 메뉴 영역 -->
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100">
+        <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">MyRecipe(logo)</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipe</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="#">Recipe Share</a></li>
+                </ul>
+            </li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="question.html">Question</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="about.html">About Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html#history">History</a></li>
+                    <li><a href="about.html#structure">Structure</a></li>
+                    <li><a href="about.html#partners">Partners</a></li>
+                    <li><a href="about.html#contact">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>	
+</body>
+
+<h1 style="background-color:Orange; width: 24%;">Recipe Search</h1>
+<h4 style="background-color:hsla(9, 100%, 64%, 0.4);width: 24%;">The best Recipe for you</h4>
+<div class = "multicolumns">
+	<img src="kimchistew.jpg" alt="KimchiStew"></img>
+	<br>
+	<br>
+	<br>
+	<p style="font-size: 50pt;">KimchiStew</h2>
+<table style>
+	<tr>
+    <th style = "font-size: 20pt;">Rate ★★★★☆</th>
+	</tr>
+	<tr>
+    <td style = "font-size: 20pt;">Ingredient:</td> 
+	</tr>
+	<tr>
+    <td style = "font-size: 16pt;">
+	<input type = "checkbox" Name="F" Value = "a" Checked> Kimchi
+	<input type = "checkbox" Name="F" Value = "o" Checked>Pork
+<input type = "checkbox" Name="F" Value = "p" Checked>	Welsh Onion, <br>
+	<input type = "checkbox" Name="F" Value = "a" Checked>Crushed Garlic 
+	<input type = "checkbox" Name="F" Value = "p" Checked>Chili powder</td>
+	</tr>
+</table>
+<br	>
+<button type="button" onclick="location.href='joinUs.jsp' ">buy now!</button>
+
+	<div>
+	<br>	
+	<br>
+	<br>
+	<br>
+	<br>
+<table style="width:100%">
+  <tr>
+    <th style = "font-size:15pt;">ID: HAM_G ★★★★★</th>
+  </tr>
+  <tr>
+  <td style = "font-size : 8pt;"></td>
+  <tr>
+    <td style = "font-size: 10pt;">My son Really loved it!!</td>
+  </tr>
+<tr>
+	<th Style = "font-size:15pt;">ID: Huegang   ★☆☆☆☆</th>
+	</tr>
+	<tr>
+	<td syle = "font-size: 10pt;">It's too spicy for me:<
+</table></div>	<br>
+		<textarea rows="5" cols="30" name="contents">share your comments</textarea>
+	 <form action="a.html">
+	 <br>
+  	<input type="button" name="btn2" value="Save" onclick="alert('Saved your comment :)')">
+	</div>
+</div>
+<div class = "multicolumns_hamham">
+	<br>
+	<p style = "font-size : 30pt;">KimchiStew Recipe<p/>
+<br>
+	<img src="kimchistewrecipe.png" alt="KimchiStewrecipe" style = "width: 1000px; height: 500px;"></img>
+
+
+</div>
+
+</html>
